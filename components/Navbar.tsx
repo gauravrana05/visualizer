@@ -19,6 +19,8 @@ const Navbar = () => {
                 <span className="sr-only">Workflow</span>
                 <Image
                   className="h-8 w-auto sm:h-10"
+                  width="100"
+                  height="32"
                   src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                   alt=""
                 />
@@ -359,7 +361,8 @@ const Navbar = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <Image
-                    className="h-8 w-auto"
+                    width="100"
+                    height="32"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                     alt="Workflow"
                   />
