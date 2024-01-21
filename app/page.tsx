@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <MaxWidthWrapper className="">
       <div className="py-10 mx-auto text-center flex flex-col items-center max-w-3xl">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Lets interact with the
+        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Let&apos;s interact with the{' '}
           <span className=" text-blue-600">
             algorithms
           </span>
