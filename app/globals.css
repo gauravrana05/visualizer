@@ -82,6 +82,9 @@
 
 body {
   background-image: radial-gradient(#fff 25%, #b5c5e8cf 75%);
+  padding: 0;
+  margin: 0;
+  border: 0;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -228,5 +231,35 @@ body {
 
   to {
     transform: translate(0, 0);
+  }
+}
+
+td {
+  border: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+
+.grid>div {
+  margin: 5px 10px;
+  padding: 6px 6px;
+  background-color: lightgray;
+  border-radius: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .grid>div {
+    margin: 3px 6px;
+    padding: 2px 2px;
   }
 }

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <MaxWidthWrapper className="">
       <div className="py-100 mx-auto text-center flex flex-col items-center max-w-3xl  ">
-        <div className="box h-[15vh] w-[15vh] pt-[3vh] sm:pt-[5vh] sm:h-[30vh] sm:w-[30vh] flex justify-center pointer-events-none">
+        <div className="box h-[15vh] w-[15vh] sm:pt-[5vh] sm:h-[30vh] sm:w-[30vh] flex justify-center">
           <div className="circle1 h-[15vh] w-[15vh] sm:h-[30vh] sm:w-[30vh]"></div>
           <div className="circle2 h-[15vh] w-[15vh] sm:h-[30vh] sm:w-[30vh]"></div>
           <div className="circle3 h-[15vh] w-[15vh] sm:h-[30vh] sm:w-[30vh]"></div>
