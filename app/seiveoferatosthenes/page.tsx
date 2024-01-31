@@ -54,17 +54,18 @@ export default function Home() {
     setIsRunning(true);
     setStepText('Step: 1 is non prime it is set red');
     setPrimeText('Prime: ');
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 500));
 
     await findPrimeNumbers(2);
   };
   const handleReset = () => {
     // Reset state and grid
-    setArr(new Array(101).fill(1).map((_, i) => 1));
-    setStepText('');
-    setPrimeText('Prime: ');
-    setIsRunning(false);
-    setGrid();
+    // setArr(new Array(101).fill(1).map((_, i) => 1));
+    // setStepText('');
+    // setPrimeText('Prime: ');
+    // setIsRunning(false);
+    // setGrid();
+    window.location.reload();
   };
   const findPrimeNumbers = async (i: number) => {
 
@@ -81,7 +82,7 @@ export default function Home() {
     } else {
       // Update text indicating non-prime number
       setStepText(`Step: ${i} is red so it is non-prime`);
-      await new Promise((resolve) => setTimeout(resolve, 1000)); // Delay for visual effect
+      await new Promise((resolve) => setTimeout(resolve, 500)); // Delay for visual effect
     }
 
     // Find next prime number
@@ -92,14 +93,14 @@ export default function Home() {
       if (arr[j] === 1) {
         setNonPrime((j));
         arr[j] = 0;
-        await new Promise((resolve) => setTimeout(resolve, 50)); // Delay for visual effect
+        await new Promise((resolve) => setTimeout(resolve, 250)); // Delay for visual effect
       }
     }
   };
 
   return (
     <MaxWidthWrapper className="h-full w-full bg-white soe-wrapper pb-10">
-      <div className=" py-100 w-full mx-auto text-center flex flex-col xl:flex-row items-cetner">
+      <div id="soe-wrapper" className=" py-100 w-full mx-auto text-center flex flex-col xl:flex-row items-cetner">
         <div className="soe-algo w-full xl:w-[50%] flex items-start flex-col p-4" >
           <h1 className="font-bold justify-start text-2xl my-6 items-start">Sieve of Eratosthenes</h1>
           <p className="text-sm text-start">

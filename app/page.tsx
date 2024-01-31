@@ -17,12 +17,12 @@ export default function Home() {
           <span className=" text-blue-600">
             algorithms
           </span>
-          .
+
         </h1>
         <p className="mt-6 text-large max-w-prose text-muted-foreground"> Welcome to visualiser. See the magic unfold in code, transform complexity into clarity, making learning and exploring algorithms an enchanting experience.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
-          <Link href="/seiveoferatosthenes" className={buttonVariants()}>
+          <Link href="/seiveoferatosthenes#soe-wrapper" className={buttonVariants()}>
             Seive of Eratosthenens
           </Link>
           <Button variant='ghost'> Peak in 2D &rarr;</Button>

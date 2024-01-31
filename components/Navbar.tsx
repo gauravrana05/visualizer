@@ -13,9 +13,9 @@ const Navbar = () => {
     <>
       <div className="relative bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+          <div className="flex justify-between items-center border-b-2 border-gray-100 py-3 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <Link href="#">
+              <Link href="/">
                 <span className="sr-only">Workflow</span>
                 <Image
                   className="h-8 w-auto sm:h-10"
@@ -107,6 +107,7 @@ const Navbar = () => {
                   <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                       <Link
+                        onClick={() => setFlyer(false)}
                         href="#"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
@@ -136,7 +137,8 @@ const Navbar = () => {
                         </div>
                       </Link>
                       <Link
-                        href="#"
+                        onClick={() => setFlyer(false)}
+                        href="/seiveoferatosthenes#soe-wrapper"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
                         {/* Heroicon name: outline/cursor-click */}
@@ -160,7 +162,7 @@ const Navbar = () => {
                             Sieve of Eratosthenens
                           </p>
                           <p className="mt-1 text-sm text-gray-500">
-                            Get all the prime numbers that are less than 400.
+                            Get all the prime numbers that are less than 100.
                           </p>
                         </div>
                       </Link>
@@ -330,7 +332,7 @@ const Navbar = () => {
             </nav>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 ">
               <Link
-                href="#"
+                href="/about"
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-lg font-bold tracking-wide text-white bg-indigo-600 hover:bg-indigo-700"
               >
                 Visualizer
